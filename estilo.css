@@ -1,0 +1,157 @@
+html, body, .capa{
+    height: 100%;
+}
+
+body{
+    background: url('imagens/capa.png'),
+                url('imagens/ruido.png'),
+                linear-gradient(50deg,#ff4169, #7c26f8);
+    background-attachment: fixed; /* background fica fixo, nao se move na tela */
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.img-logo{
+    height:40px;
+    width: 132px;
+    display: block; /* span eh inline e quer exibir em blocos */
+    background: url('imagens/spotify.svg') no-repeat;
+    background-size: contain; /*imagem de fundo vai preencher a altura e largura definida*/
+    color: transparent; /*esconde o nome 'Spotify' que ta atras da logo e so deve aparecer se a logo n carregar*/
+}
+
+nav.navbar-transparente{
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+}
+
+.navbar-brand{
+    padding: 5px 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a{
+    color: white;
+    background: none;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+    color: #9bf0e1;
+    background: none;
+}
+
+.capa{
+    display: table; /* deixa a capa com comportamento de tabela */
+    width: 100%;
+}
+
+.texto-capa{
+    text-align: center;
+    color: white;
+    /* texto se comporta como célula de tabela */
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Botões */
+
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    /* para o border-radius funcionar em outros browsers */
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 10px 35px;
+    margin: 0px 15px; 
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo{
+    background: #7c25f8;
+}
+
+.btn-roxo:hover{
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco{
+    border: 2px solid white;
+}
+
+.btn-branco:hover{
+    background: white;
+    color: black;  
+}
+
+/** Seção de serviços **/
+#servicos{
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.albuns{
+    padding: 10px 0px 10px 0px;
+}
+
+.rotacionar{
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+/** Recursos **/
+#recursos{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+/** -------- TIPOGRAFIA -------- **/
+
+h1{
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: -7px;
+    margin-bottom: 50px;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+#servicos h2, #servicos h3{
+    color: #7c25f8;
+}
+
+#recursos h3{
+    color: #9bf0e1;
+}
+
+#rodape h4{
+    color: #919496;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/** Seção de serviços **/
+footer{
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+
+.item-rede-social{
+    float: right;
+}
